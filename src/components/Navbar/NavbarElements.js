@@ -3,7 +3,7 @@ import { Link as LinkR } from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 export const Nav = styled.nav`
-  background-color: #fff;
+  background-color: ${({scrollNav}) => (scrollNav ? '#0a3149' : '#fff')};
   height: 70px;
   font-family: inter;
   display: flex;
@@ -25,7 +25,7 @@ export const NavbarContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding: 0 24px;
-  max-width: 1100px;
+  max-width: 100%;
 `
 
 export const NavLogoContainer = styled(LinkR)`
@@ -43,14 +43,14 @@ export const NavLogo = styled.img`
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 770px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
     font-size: 1.8rem;
-    color: #000;
+    color: ${({scrollNav}) => (scrollNav ? '#fff' : '#000')};
     cursor: pointer;
   }
 `
@@ -62,8 +62,10 @@ export const NavMenu = styled.ul`
     margin-right: -22px;
     font-size: 16px;
     font-family: 'Asap', sans-serif;
+    color: ${({scrollNav}) => (scrollNav ? '#fff' : '#000')};
 
-    @media screen and (max-width: 720px) {
+
+    @media screen and (max-width: 770px) {
         display: none;
     }
  `
@@ -74,7 +76,6 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)`
-  color: #000;
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -99,7 +100,7 @@ export const NavButton = styled.nav`
   align-items: center;
   max-width: 200px;
 
-  @media screen and (max-width: 720px) {
+  @media screen and (max-width: 770px) {
     display: none;
   }
 `

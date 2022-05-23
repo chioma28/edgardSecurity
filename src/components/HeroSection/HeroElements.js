@@ -5,9 +5,11 @@ display: flex;
 justify-content: center;
 align-items: center;
 padding: 0 30px;
-height: 600px;
+height: 650px;
 position: relative;
 z-index: 1;
+margin-bottom: 60px;
+
 
 :before {
     content: '';
@@ -41,7 +43,7 @@ export const HeroContent = styled.div`
     z-index: 3;
     max-width: 1200px;
     position: absolute;
-    margin-top: 20px;
+    margin-top: 60px;
     margin-right: 20px;
     padding: 8px 28px;
     display: flex;
@@ -57,6 +59,10 @@ export const HeroH1 = styled.h1`
     font-style: bolder;
     text-transform: uppercase;
 
+    @media screen and (max-width: 918px){
+        font-size: 42px;
+        line-height: 30px;
+    }
     @media screen and (max-width: 900px){
         font-size: 40px;
         line-height: 30px;
@@ -116,8 +122,12 @@ export const HeroH2 = styled.span`
     text-transform: uppercase;
     font-family: 'Red Hat Display', sans-serif;
 
+    @media screen and (max-width: 918px){
+        font-size: 42px;
+        line-height: 30px;
+    }
     @media screen and (max-width: 900px){
-        font-size: 45px;
+        font-size: 40px;
         line-height: 30px;
     }
     @media screen and (max-width: 768px){
@@ -132,6 +142,7 @@ export const HeroH2 = styled.span`
         font-size: 25px;
         line-height: 30px;
     }
+
     @media screen and (max-width: 480px){
         font-size: 20px;
         line-height: 30px;
@@ -164,6 +175,7 @@ export const HeroH2 = styled.span`
         font-size: 6px;
         line-height: 1px;
     }
+
 `
 export const HeroP = styled.p`
     max-width: 1047px;

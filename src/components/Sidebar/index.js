@@ -22,7 +22,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     smooth={true} 
                     duration={500} 
                     exact='true' 
-                    offset={-80}
+                    offset={-10}
                     onClick={toggle} >
                         Home
                     </SidebarLink>
@@ -30,7 +30,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     smooth={true} 
                     duration={500} 
                     exact='true' 
-                    offset={-60}
+                    offset={-100}
                     onClick={toggle} >
                         About
                     </SidebarLink>
@@ -38,7 +38,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     smooth={true} 
                     duration={500} 
                     exact='true' 
-                    offset={-70}
+                    offset={-90}
                     onClick={toggle} >
                         Our Services
                     </SidebarLink>
