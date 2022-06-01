@@ -162,7 +162,7 @@ export const Service = styled.div`
   height: 351px;
   box-shadow: 5px 5px 5px #2a52be;
   padding-top: 25px;
-  word-spacing: 8px;
+  word-spacing: 5px;
 
   &:hover {
     background-color: #00bfff;
