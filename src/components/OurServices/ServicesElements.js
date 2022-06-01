@@ -87,6 +87,7 @@ export const ServicesP = styled.p`
   color: #fff;
   margin-bottom: 13px;
   text-align: center;
+  word-spacing: 25px;
 `
 export const Services = styled.div`
   display: grid;
