@@ -88,7 +88,7 @@ export const Services = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 20px;
   grid-column-gap: 10px;
-  font-family: 'Manrope', sans-serif;
+  // font-family: 'Manrope', sans-serif;
   align-items: center;
   justify-content: center;
   margin-top: 45px;
@@ -162,7 +162,8 @@ export const Service = styled.div`
   height: 351px;
   box-shadow: 5px 5px 5px #2a52be;
   padding-top: 25px;
-  word-spacing: 5px;
+  word-spacing: 1.5px;
+  font-size: 14px;
 
   &:hover {
     background-color: #00bfff;

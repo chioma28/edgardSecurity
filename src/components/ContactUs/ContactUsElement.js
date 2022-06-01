@@ -42,7 +42,7 @@ export const Heading = styled.h5`
 export const Label = styled.label`
     font-weight: normal;
     font-size: 17px;
-    padding-bottom: 30px;
+    padding-bottom: 3px;
 `;
 
 export const Input = styled.input`
