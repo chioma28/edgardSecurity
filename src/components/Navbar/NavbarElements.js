@@ -105,7 +105,7 @@ export const NavButton = styled.nav`
   }
 `
 
-export const NavButtonLink = styled(LinkR)`
+export const NavButtonLink = styled.a`
   background: #127cf9;
   display: flex;
   color: #fff;

@@ -112,7 +112,7 @@ const Navbar = ({ toggle }) => {
           </NavItem>
         </NavMenu>
         <NavButton>
-          <NavButtonLink target="_blank" to={{ pathname: "https://forms.gle/v6y5tXf8oeGsuSp39"}} >Get a quotation</NavButtonLink>
+          <NavButtonLink target="_blank" rel="noreferrer" href="https://forms.gle/v6y5tXf8oeGsuSp39" >Get a quotation</NavButtonLink>
         </NavButton>
       </NavbarContainer>
     </Nav>

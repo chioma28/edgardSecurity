@@ -9,11 +9,10 @@ import {
   Input,
   Errors,
   TextArea,
+  Heading,
   SubmitButton,
   Output
 } from './ContactUsElement'
-import { Heading } from '../OurClientele/OurClienteleElements'
-
 const validate = (values) => {
   const errors = {}
   if (!values.from_name) {
@@ -73,7 +72,7 @@ const ContactUsSection = ({ id, title }) => {
 
   return (
     <ContactUsContainer id={id}>
-      <Heading style={{ color: '#fff' }}>{title}</Heading>
+      <Heading>{title}</Heading>
       <ContactForm onSubmit={formik.handleSubmit}>
         <Label htmlFor="from_name">Name</Label>
         <Input

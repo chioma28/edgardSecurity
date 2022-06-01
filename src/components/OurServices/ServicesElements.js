@@ -9,7 +9,7 @@ export const ServicesContainer = styled.div`
 `
 
 export const ServicesWrapper = styled.div`
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Red Hat Display';
   width: 100%;
   height: 1000px;
   padding: 0 20px;

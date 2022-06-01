@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ContactUsContainer = styled.div`
     background: #127cf9;
-    height: 95vh;
+    height: 110vh;
     width: 100%;
     margin-top: 30px;
     position: relative;
@@ -29,9 +29,20 @@ export const ContactForm = styled.form`
     
 `;
 
+export const Heading = styled.h5`
+    color: #fff;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+    padding-top: 30px;
+   
+`;
+
 export const Label = styled.label`
     font-weight: normal;
     font-size: 17px;
+    padding-bottom: 30px;
 `;
 
 export const Input = styled.input`
