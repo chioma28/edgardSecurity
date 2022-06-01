@@ -7,6 +7,12 @@ import AboutSection from '../components/AboutUs';
 import { aboutPage } from '../components/AboutUs/data';
 import ServicesSection from '../components/OurServices';
 import { servicesPage } from '../components/OurServices/data';
+import ClienteleSection from '../components/OurClientele';
+import { clientelePage } from '../components/OurClientele/data';
+import ContactUsSection from '../components/ContactUs';
+import { contactUsPage } from '../components/ContactUs/data';
+import FooterSection from '../components/Footer';
+import { footerPage } from '../components/Footer/data';
 
 
 const Home = () => {
@@ -22,6 +28,9 @@ const Home = () => {
         <HeroSection {...heroPage} />
         <AboutSection {...aboutPage} />
         <ServicesSection {...servicesPage} />
+        <ClienteleSection {...clientelePage} />
+        <ContactUsSection  {...contactUsPage} />
+        <FooterSection {...footerPage} />
     </>
   )
 }

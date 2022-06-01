@@ -15,8 +15,8 @@ export const AboutWrapper = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 25px;
   width: 100%;
-  height: 600px;
-  margin-top: 80px;
+  height: 630px;
+  margin-top: 100px;
   padding: 0 20px;
 
   
@@ -199,6 +199,9 @@ export const Heading = styled.h5`
     @media screen and (max-width: 1060px){
         font-size: 13.5px;
     }
+    @media screen and (max-width: 904px){
+      text-align: center;
+  }
 `
 
 export const AboutH1 = styled.h2`
@@ -212,6 +215,9 @@ export const AboutH1 = styled.h2`
     @media screen and (max-width: 1060px){
         font-size: 25px;
     }
+    @media screen and (max-width: 904px){
+      text-align: center;
+  }
 `
 
 export const AboutP = styled.p`

@@ -60,7 +60,7 @@ const Sidebar = ({ isOpen, toggle }) => {
                     </SidebarLink>
                 </SidebarMenu>
                 <SideButtonWrap>
-                    <SidebarRoute to="/get-quote" onClick={toggle} >Get a quotation</SidebarRoute>
+                    <SidebarRoute target="_blank" to={{ pathname: "https://forms.gle/v6y5tXf8oeGsuSp39"}}  onClick={toggle} >Get a quotation</SidebarRoute>
                 </SideButtonWrap>
             </SidebarWrapper>
         </SidebarContainer>
