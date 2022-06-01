@@ -69,6 +69,7 @@ export const Heading = styled.h5`
     text-align: center;
     margin-bottom: 12px;
     padding-top: 40px;
+    
 `
 
 export const ServicesH1 = styled.h2`
@@ -76,11 +77,13 @@ export const ServicesH1 = styled.h2`
     font-size: 32px;
     text-align: center;
     color: #fff;
+     
 
 `;
 
 export const ServicesP = styled.p`
   font-weight: 400;
+  font-family: 'Manrope', sans-serif; 
   color: #fff;
   margin-bottom: 13px;
   text-align: center;
@@ -90,6 +93,7 @@ export const Services = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 20px;
   grid-column-gap: 10px;
+  font-family: 'Manrope', sans-serif; 
   align-items: center;
   justify-content: center;
   margin-top: 45px;
