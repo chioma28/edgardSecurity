@@ -216,7 +216,7 @@ export const ServiceText = styled.p`
   font-size: 15px;
 
   &:hover {
-    font-size: 15.5px;
+    font-size: 15.2px;
   }
 
   @media screen and (max-width: 351px) {

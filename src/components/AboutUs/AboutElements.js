@@ -10,7 +10,7 @@ export const AboutContainer = styled.div`
 `
 
 export const AboutWrapper = styled.div`
-  font-family: 'Red Hat Display', sans-serif;
+  font-family: 'Asap', sans-serif;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 25px;

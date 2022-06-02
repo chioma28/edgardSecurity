@@ -14,6 +14,7 @@ export const FooterWrapper = styled.div`
     max-width: 1440px;
     margin-right: auto;
     margin-left: auto;
+    font-family: 'Asap', sans-serif;
     
     padding: 0 24px;
     justify-content: center;

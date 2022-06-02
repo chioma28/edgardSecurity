@@ -6,6 +6,7 @@ export const ContactUsContainer = styled.div`
     width: 100%;
     margin-top: 30px;
     position: relative;
+    font-family: 'Asap', sans-serif;
     
   }
 

@@ -9,6 +9,7 @@ height: 650px;
 position: relative;
 z-index: 1;
 margin-bottom: 60px;
+font-family: 'Asap', sans-serif;
 
 
 :before {
