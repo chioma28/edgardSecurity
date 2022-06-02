@@ -9,7 +9,7 @@ export const ServicesContainer = styled.div`
 `
 
 export const ServicesWrapper = styled.div`
-  font-family: 'Red Hat Display';
+  font-family: 'Asap', sans-serif;
   width: 100%;
   height: 1000px;
   padding: 0 20px;
@@ -78,17 +78,18 @@ export const ServicesH1 = styled.h2`
 
 export const ServicesP = styled.p`
   font-weight: 400;
-  font-family: 'Manrope', sans-serif;
+  font-family: 'Asap', sans-serif;
   color: #fff;
   margin-bottom: 13px;
   text-align: center;
+ 
 `
 export const Services = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-row-gap: 20px;
   grid-column-gap: 10px;
-  // font-family: 'Manrope', sans-serif;
+  font-family: 'Asap', sans-serif;
   align-items: center;
   justify-content: center;
   margin-top: 45px;
@@ -163,6 +164,7 @@ export const Service = styled.div`
   box-shadow: 5px 5px 5px #2a52be;
   padding-top: 25px;
   word-spacing: 1.5px;
+  text-align: center;
   font-size: 14px;
 
   &:hover {
@@ -191,7 +193,6 @@ export const Service = styled.div`
 export const Icon = styled.div`
   color: #3a56e8;
   font-size: 55px;
-  margin-left: 150px;
 `
 
 export const ServiceName = styled.h3`

@@ -18,7 +18,7 @@ const ServicesSection = ({id, title, heading, body, consultancy, risk, training,
         <ServicesWrapper>
           <Heading>{title}</Heading>
           <ServicesH1>{heading}</ServicesH1>
-          <ServicesP>{body}</ServicesP>
+          <ServicesP>Our portfolio of services encompasses Equipment Advisory and  Supply, Body Guard, General Security Services <br /> Industrial Security and a range of infrastructure support services, including Project Management and Contract Administration.</ServicesP>
           <Services>
             <Service>
               <Icon>
