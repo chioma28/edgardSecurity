@@ -14,6 +14,33 @@ export const ContactUsContainer = styled.div`
     padding: 0 5px;
     margin: auto;
     }
+    @media screen and (max-width: 912px) {
+        height: 51vh;
+    }
+    @media screen and (max-width: 820px) {
+        height: 59vh;
+    }
+    @media screen and (max-width: 768px) {
+        height: 69vh;
+    }
+    @media screen and (max-width: 640px) {
+        height: 179vh;
+    }
+    @media screen and (max-width: 540px) {
+        height: 92vh;
+    }
+    @media screen and (max-width: 414px) {
+        height: 79vh;
+    }
+    @media screen and (max-width: 360px) {
+        height: 99vh;
+    }
+    @media screen and (max-width: 375px) {
+        height: 99vh;
+    }
+    @media screen and (max-width: 320px) {
+        height: 135vh;
+    }
 `;
    
 export const ContactForm = styled.form`

@@ -59,6 +59,17 @@ export const ServicesWrapper = styled.div`
     margin-top: 350px;
     height: 2240px;
   }
+  @media screen and (max-width: 395px) {
+    margin-top: 350px;
+    height: 2640px;
+  }
+  @media screen and (max-width: 360px) {
+    margin-top: 350px;
+    height: 2260px;
+  }
+  @media screen and (max-width: 320px) {
+    height: 2090px;
+  }
 `
 export const Heading = styled.h5`
   color: #fff;
@@ -112,6 +123,9 @@ export const Services = styled.div`
   @media screen and (max-width: 1242px) {
     margin-left: 75px;
   }
+  @media screen and (max-width: 1280px) {
+    margin-right: 80px;
+  }
   @media screen and (max-width: 1170px) {
     margin-right: 20px;
   }
@@ -137,14 +151,23 @@ export const Services = styled.div`
   @media screen and (max-width: 703px) {
     margin-left: 80px;
   }
-
+  @media screen and (max-width: 640px) {
+    margin-left: 120px;
+  }
   @media screen and (max-width: 420px) {
     margin-right: 10px;
   }
-  @media screen and (max-width: 411px) {
-    margin-right: 15px;
+  
+  @media screen and (max-width: 415px) {
+    margin-right: 120px;
   }
-  @media screen and (max-width: 360px) {
+  
+  @media screen and (max-width: 393px) {
+    margin-right: 120px;
+  }
+  
+  
+  @media screen and (max-width: 360px, max-height:) {
     margin-right: 75px;
   }
   @media screen and (max-width: 347px) {
@@ -152,6 +175,9 @@ export const Services = styled.div`
   }
   @media screen and (max-width: 351px) {
     margin-right: 20px;
+  }
+  @media screen and (max-width: 320px) {
+    margin-right: 120px;
   }
   @media screen and (max-width: 290px) {
     margin-right: 20px;
@@ -188,6 +214,10 @@ export const Service = styled.div`
   @media screen and (max-width: 360px) {
     width: 280px;
     height: 293px;
+  }
+  @media screen and (max-width: 320px) {
+    width: 260px;
+    height: 263px;
   }
 `
 export const Icon = styled.div`
@@ -227,7 +257,10 @@ export const ServiceText = styled.p`
     }
   }
   @media screen and (max-width: 360px) {
-    font-size: 12px;
+    font-size: 11px;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 9.7px;
   }
   @media screen and (max-width: 290px) {
     font-size: 10px;

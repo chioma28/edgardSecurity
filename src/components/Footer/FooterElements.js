@@ -25,6 +25,9 @@ export const FooterWrapper = styled.div`
     @media screen and (max-width: 940px){
         height: 40vh;
     }
+    @media screen and (max-width: 920px){
+        height: 45vh;
+    }
 
     @media screen and (max-width: 894px){
         height: 50vh;
@@ -35,6 +38,20 @@ export const FooterWrapper = styled.div`
     @media screen and (max-width: 762px){
         height: 35vh;
     }
+    @media screen and (max-width: 640px) {
+        height: 59vh;
+    }
+    @media screen and (max-width: 540px) {
+        height: 35vh;
+    }
+    @media screen and (max-width: 414px) {
+        height: 29vh;
+    }
+    @media screen and (max-width: 360px) {
+        height: 78vh;
+    }
+    
+
 `
 export const TextWrapper = styled.div`
    max-width: 1200px;

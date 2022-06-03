@@ -90,7 +90,7 @@ export const HeroH1 = styled.h1`
         line-height: 30px;
     }
     @media screen and (max-width: 320px){
-        font-size: 17px;
+        font-size: 15px;
         line-height: 5px;
     }
     @media screen and (max-width: 258px){
@@ -153,7 +153,7 @@ export const HeroH2 = styled.span`
         line-height: 30px;
     }
     @media screen and (max-width: 320px){
-        font-size: 17px;
+        font-size: 15px;
         line-height: 5px;
     }
     @media screen and (max-width: 258px){
