@@ -11,19 +11,21 @@ import {
   TextArea,
   Heading,
   SubmitButton,
-  Output
-} from './ContactUsElement'
+  Output,
+} from './ContactUsElement';
 const validate = (values) => {
   const errors = {}
   if (!values.from_name) {
     errors.from_name = 'Required'
-  } else if (values.from_name.length < 6) {
-    errors.from_name = 'Must be more than 6 characters or more'
+  } else if (values.from_name.length < 5) {
+    errors.from_name = 'Must be more than 5 characters or more'
   }
 
   if (!values.reply_to) {
     errors.reply_to = 'Required'
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.reply_to)) {
+  } else if (
+    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.reply_to)
+  ) {
     errors.reply_to = 'Invalid email address'
   }
 
@@ -40,35 +42,40 @@ const validate = (values) => {
   return errors
 }
 
+
 const ContactUsSection = ({ id, title }) => {
   const [buttonState, setButtonState] = useState('')
   const formik = useFormik({
+    
     initialValues: {
-      from_name: '', //USER NAME
-      to_name: process.env.REACT_APP_ADMIN_EMAIL, //ADMIN EMAIL
-      phone: '', //Phone number 
+      from_name: '', //USER NAME 
+     // to_name: 'omaokeke28@gmail.com', //ADMIN EMAIL
+      phone: '', //Phone number
       reply_to: '', //USER EMAIL
-      message: '', //Message
+      message: '' //Message
     },
     validate,
-    onSubmit: (values, {resetForm}) => {
+    onSubmit: (values, { resetForm }) => {
+      debugger;
       try {
         emailjs.send(
           process.env.REACT_APP_SERVICE_ID,
           process.env.REACT_APP_TEMPLATE_ID,
           values,
-          process.env.REACT_APP_USER_ID,
-        ).then(() => {
-          setButtonState('Message sent successfully!')
-          console.log('SUCCESS!')
-          setTimeout (resetForm(), 15000);
-        })
+          process.env.REACT_APP_USER_ID
+
+          )
+          .then(() => {
+            setButtonState('Message sent successfully!');
+            console.log('SUCCESS!');
+            setTimeout(resetForm(), 15000);
+          })
       } catch {
-        setButtonState('Failed to send')
-        console.log('FAILED...')
+        setButtonState('Failed to send');
+        console.log('FAILED...');
       }
     },
-  })
+  });
 
   return (
     <ContactUsContainer id={id}>
@@ -84,6 +91,7 @@ const ContactUsSection = ({ id, title }) => {
           onBlur={formik.handleBlur}
           value={formik.values.from_name}
         />
+      
         {formik.touched.from_name && formik.errors.from_name ? (
           <Errors>{formik.errors.from_name}</Errors>
         ) : null}
@@ -119,7 +127,7 @@ const ContactUsSection = ({ id, title }) => {
           name="message"
           placeholder="Enter your message"
           rows="6"
-          cols="50"
+          cols="50" 
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
           value={formik.values.message}
@@ -127,11 +135,13 @@ const ContactUsSection = ({ id, title }) => {
         {formik.touched.message && formik.errors.message ? (
           <Errors>{formik.errors.message}</Errors>
         ) : null}
-        <SubmitButton disabled={formik.isSubmitting} type="submit">Send Message</SubmitButton>
+        <SubmitButton disabled={formik.isSubmitting} type="submit">
+          Send Message
+        </SubmitButton>
         <Output id="output">{buttonState}</Output>
       </ContactForm>
     </ContactUsContainer>
   )
 }
 
-export default ContactUsSection;
+export default ContactUsSection
